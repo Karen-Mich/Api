@@ -1,0 +1,10 @@
+{
+    "Nombre":"Karen",
+    "Apellido":"Guatumillo",
+    "Edad":20,
+    "Estudios":[{
+        "Primaria":"Liceo Eugenia Mera",
+        "Secundaria":"Colegio Ambato",
+        "Superior":"UTA"}
+    ]
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var xhtp = new XMLHttpRequest;
+        xhtp.onreadystatechange = function(){
+            if(xhtp.readyState==4 && xhtp.status==200){
+           // console.log(xhtp.readyState);
+       // xhtp.open("GET","miJson.txt");
+        //xhtp.send();
+            //console.log(xhtp.readyState);
+        console.log("valor de la propiedad Status"+xhtp.status);
+        console.log("valor de la propiedad Ready"+this.readyState);
+        console.log(xhtp.responseText);
+        var objetoJS = JSON.parse(xhtp.responseText);
+        console.log(objetoJS);
+        console.log(objetoJS.Estudios[0].Primaria);
+    }
+        };
+        xhtp.open("GET","miJson.txt");
+        xhtp.send();
+        
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

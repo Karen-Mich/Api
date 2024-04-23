@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // //String
+        // var cadena = "Hola";
+        // console.log(cadena);
+        // //Numeros
+        // var numero = 23;
+        // console.log(numero);
+        // //Array
+        // var arraySimple = ["Lunes","Martes","Miercoles"];
+        // console.log(arraySimple[0]);
+        // //Objeto
+        // var objeto = {"nombre":"Karen",
+        //             "edad":20,
+        //             "curso":"Quinto"}
+        // console.log(objeto.edad);
+        // //Booleanos
+        // var boolean = null;
+        // console.log(boolean);
+
+        // //Json Combina
+        // var json = {"nombre":"Carlos",
+        //             "apellido":"Lopez",
+        //         "edad":20,
+        //         "casado":false,
+        //     "estudios": [{
+        //     "primaria": "La Salle",
+        //     "secundaria": "Bolivar",
+        //     "Superior": "UTA"
+        //                 }
+        //             ]}
+        // console.log(json.estudios[0].primaria);
+        // console.log(json.casado);
+
+        //JSON.Parse convertir un String JSON a un objeto JavaScript
+        // var cadena = '{"nombre":"carlos","apellido":"Lopez"}';
+        // console.log(cadena);
+
+        // var Json = JSON.parse(cadena);
+        // console.log(Json);
+        // console.log(Json.nombre);
+
+        //JSON STRINGFY convertir un objeto javascript a json st
+        var Objeto = {"nombre":"carlos","apellido":"Lopez"};
+        console.log(Objeto);
+
+        var Texto = JSON.stringify(Objeto);
+        console.log(Texto);
+
+        //JSON STRINGFY convertir un array javascript a json Script
+        var arreglo=["lunes","martes","miercoles"];
+        console.log(arreglo);
+        var Json = JSON.stringify(arreglo);
+        console.log(Json);
+        </script>
+</body>
+</html>

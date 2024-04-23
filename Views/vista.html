@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de estudiantes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="ajax.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registro de Estudiantes</h2>
+        <div class="containerEstudiantes">
+            <form id="formularioEstudiante">
+                <div>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" class="form-control" id="cedula" name="cedula">
+                </div>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono">
+                </div>
+                <button type="submit" class="btn-primary" id="guardar">Guardar</button>
+                <button type="button" class="btn-danger" id="editar">Editar</button>
+            </form>
+        </div>
+    
+        <br>
+        <table class="table" id="tablaEstudiantes">
+            <thead>
+               <tr>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1834567895</td>
+                    <td>Francisco</td>
+                    <td>Soria</td>
+                    <td>Quito</td>
+                    <td>0994561235</td>
+                    <td>
+                        <a class="btn">Editar</a>
+                        <a class="btn">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
